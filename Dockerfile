@@ -7,7 +7,7 @@ FROM node:14-alpine
 WORKDIR /app
 
 # Copy the package.json and yarn.lock files to the working directory
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .
 
 # Install app dependencies
 RUN npm install
