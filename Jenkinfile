@@ -24,7 +24,7 @@ pipeline {
                     dir('./mini-project') {
                        sh 'echo "Running in $(pwd)"'
                        sh 'echo start build the Docker image = $DOCKER_IMAGE'
-                       sh 'docker build -t $DOCKER_IMAGE .'
+                       sh 'docker build . -f Dockerfile.base -t $DOCKER_IMAGE .'
                     }   
                   
             }
