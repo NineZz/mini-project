@@ -24,5 +24,5 @@ RUN npx expo start
 EXPOSE 3000
 
 # Start the app
-CMD ["npx", "web"]
+CMD ["npx", "start"]
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
