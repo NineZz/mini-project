@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Use an official Node.js runtime as a parent image
-FROM node:14-alpine
+FROM node:18-alpine
 
 # Set the working directory to /app
 WORKDIR /app
@@ -21,7 +21,7 @@ COPY . .
 RUN npx expo start
 
 # Expose port 8080 for the React Native packager
-# EXPOSE 8085
+EXPOSE 3000
 
 # Start the app
 # CMD ["npx", "react-native", "start"]
